@@ -1,0 +1,38 @@
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"  >
+    <data>
+        <variable
+            name="user"
+            type="test.bwie.com.dai.mvvm.StudyBean"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="test.bwie.com.dai.mvvm.MvvMActivity"
+        >
+                <TextView
+                    android:text="@{user.name}"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:text="@{user.pass}"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <ImageView
+                    android:id="@+id/iv"
+                    app:pick="@{user.pick}"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <Button
+                    android:onClick="@{user.onItemClick}"
+                    android:hint="请输入用户名"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+    </LinearLayout>
+</layout>
+

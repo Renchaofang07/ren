@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="test.bwie.com.dai.updown.UpDownActivity">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        app:riv_border_color="#333333"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius_bottom_left="25dp"
+        app:riv_corner_radius_top_right="25dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="false"
+        app:riv_tile_mode="repeat" />
+
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="相册"
+        android:id="@+id/bt1"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="相机"
+        android:id="@+id/bt2"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>
